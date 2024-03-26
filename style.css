@@ -1,0 +1,310 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+header{
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    z-index: 2;
+}
+
+.navigation ul{
+    display: flex;
+    gap: 5rem;
+    list-style: none;
+}
+.navigation a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+    margin-right: 20px;
+}
+.navigation a:hover{
+    border-bottom: 1px solid rgba(25, 24, 24, 0.792);
+    
+}
+
+
+ 
+
+.hero-section{
+    background-image: url(image/hero1.jpg);
+    object-fit: cover;
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.hero-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-section h1{
+    font-size: 40px;
+    font-weight: normal;
+    padding: 15px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+
+
+
+.main {
+    position: relative;
+    min-height: 100vh;
+    
+width: 100%;
+}
+
+.heading{
+    font-size: 40px;
+    font-weight: normal;
+    padding: 15px;
+    text-align: center;
+    text-transform: capitalize;
+
+}
+
+.training-topic{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+.card{
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 180px;
+    height: 180px;
+    text-align: center;
+}
+
+
+.card img{
+    width: 80px;
+}
+
+.card:hover{
+    
+    background: rgb(0,0,0,0.6);
+    
+
+}
+
+
+.sub-text a{
+    
+    text-decoration: none;
+    color: black;
+}
+.sub-text{
+    text-align: center;
+    width: 180px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+  */
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #333; /* Updated background color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    z-index: 2;
+    padding: 0 20px; /* Added padding */
+}
+
+.logo h1 {
+    color: white; /* Adjusted logo color */
+}
+
+.navigation ul {
+    display: flex;
+    gap: 5rem;
+    list-style: none;
+}
+
+.navigation a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white; /* Adjusted navigation link color */
+    margin-right: 20px;
+}
+
+.navigation a:hover {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8); /* Updated hover effect */
+}
+
+.hero-section {
+    background-image: url(image/hero1.jpg);
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Updated text color */
+    text-align: center;
+}
+
+.main {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #f2f2f2; /* Added background color */
+    padding: 20px; /* Added padding */
+}
+
+.heading {
+    font-size: 40px;
+    font-weight: normal;
+    padding: 15px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.training-topic {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 180px;
+    height: 180px;
+    text-align: center;
+    background-color: #fff; /* Added background color */
+    transition: background-color 0.3s ease; /* Added transition */
+}
+
+.card img {
+    width: 80px;
+}
+
+.card:hover {
+    /* background-color: #f2f2f2; Updated hover background color */
+    background-color: rgba(255, 68, 0, 0.628);
+    cursor: pointer;
+}
+
+.sub-text a {
+    text-decoration: none;
+    color: black;
+}
+
+.sub-text {
+    text-align: center;
+    width: 180px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+footer {
+    background-color: #333; /* Footer background color */
+    color: white; /* Footer text color */
+    text-align: center;
+    padding: 20px 0; /* Added padding */
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+}
+
+ /* Hamburger Menu Styles */
+ .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .navigation ul {
+        display: flex;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+    }
+
+    .navigation ul li {
+        text-align: center;
+        padding: 10px;
+        border-bottom: 1px solid #777;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .navigation ul:not(.active) {
+        display: none;
+    }
+}
